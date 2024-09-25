@@ -35,7 +35,7 @@ export const DATA = {
   contactButtons: [
     {
       type: "Website",
-      href: "https://tolgacliskan.com?deneme",
+      href: "https://turkticaret.net",
       icon: <Icons.globe className="size-3" />,
     },
     {
