@@ -30,9 +30,23 @@ export default function Page() {
                 text={DATA.description}
               />
               <BlurFade delay={BLUR_FADE_DELAY * 5}>
-                {DATA.contactButtons && DATA.contactButtons.length > 0 && (
+                {DATA.contactButtonsFirstRow && DATA.contactButtonsFirstRow.length > 0 && (
                   <div className="flex flex-row flex-wrap items-start gap-1">
-                    {DATA.contactButtons?.map((link, idx) => (
+                    {DATA.contactButtonsFirstRow?.map((link, idx) => (
+                      <Link href={link?.href} key={idx} target="_blank">
+                        <Badge key={idx} className="flex gap-2 px-2 py-1 text-[10px]">
+                          {link.icon}
+                          {link.type}
+                        </Badge>
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </BlurFade>
+              <BlurFade delay={BLUR_FADE_DELAY * 5}>
+                {DATA.contactButtonsSecondRow && DATA.contactButtonsSecondRow.length > 0 && (
+                  <div className="flex flex-row flex-wrap items-start gap-1">
+                    {DATA.contactButtonsSecondRow?.map((link, idx) => (
                       <Link href={link?.href} key={idx} target="_blank">
                         <Badge key={idx} className="flex gap-2 px-2 py-1 text-[10px]">
                           {link.icon}
