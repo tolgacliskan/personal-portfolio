@@ -28,7 +28,6 @@ export const DATA = {
     "Vue.js",
     "Node.js",
     "Teamwork",
-    "E-commerce",
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
