@@ -28,14 +28,13 @@ export const DATA = {
     "Vue.js",
     "Node.js",
     "Teamwork",
-    "E-commerce",
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
   ],
   contactButtonsFirstRow: [
     {
-      type: "Özgeçmiş",
+      type: "CV",
       href: "/cv.pdf",
       icon: <Icons.cv className="size-3" />,
     },
