@@ -19,6 +19,7 @@ export const DATA = {
     "Kotlin",
     "Spring Boot",
     "AWS",
+    "DynamoDB",
     "PostgreSQL",
     "MySQL",
     "Redis",
@@ -32,29 +33,31 @@ export const DATA = {
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
   ],
-  contactButtons: [
+  contactButtonsFirstRow: [
     {
-      type: "Website",
-      href: "https://tolgacliskan.com",
-      icon: <Icons.globe className="size-3" />,
+      type: "Özgeçmiş",
+      href: "/cv.pdf",
+      icon: <Icons.cv className="size-3" />,
     },
     {
-      type: "Email",
+      type: "tolgacliskan@gmail.com",
       href: "mailto:tolgacliskan@gmail.com",
       icon: <Icons.email className="size-3" />,
     },
     {
-      type: "Phone",
+      type: "+905416164277",
       href: "tel:+905416164277",
       icon: <Icons.phone className="size-3" />,
     },
+  ],
+  contactButtonsSecondRow: [
     {
-      type: "GitHub",
+      type: "tolgacliskan",
       href: "https://github.com/tolgacliskan",
       icon: <Icons.github className="size-3" />,
     },
     {
-      type: "LinkedIn",
+      type: "tolgacliskan",
       href: "https://www.linkedin.com/in/tolgacliskan/",
       icon: <Icons.linkedin className="size-3" />,
     },
