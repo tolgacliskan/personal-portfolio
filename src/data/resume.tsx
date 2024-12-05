@@ -35,7 +35,7 @@ export const DATA = {
   contactButtonsFirstRow: [
     {
       type: "CV",
-      href: "/cv.pdf",
+      href: "/Tolga Çalışkan - CV.pdf",
       icon: <Icons.cv className="size-3" />,
     },
     {
