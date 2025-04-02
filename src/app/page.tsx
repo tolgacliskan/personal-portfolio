@@ -31,13 +31,11 @@ export default function Page() {
               />
               <BlurFade delay={BLUR_FADE_DELAY * 5}>
                 {DATA.contactButtonsFirstRow && DATA.contactButtonsFirstRow.length > 0 && (
-                  <div className="flex flex-row flex-wrap items-start gap-1">
+                  <div className="flex flex-row flex-wrap items-start gap-3 prose">
                     {DATA.contactButtonsFirstRow?.map((link, idx) => (
-                      <Link href={link?.href} key={idx} target="_blank">
-                        <Badge key={idx} className="flex gap-2 px-2 py-1 text-[10px]">
+                      <Link className="flex items-center gap-1 text-sm" href={link?.href} key={idx} target="_blank">
                           {link.icon}
                           {link.type}
-                        </Badge>
                       </Link>
                     ))}
                   </div>
@@ -45,14 +43,12 @@ export default function Page() {
               </BlurFade>
               <BlurFade delay={BLUR_FADE_DELAY * 5}>
                 {DATA.contactButtonsSecondRow && DATA.contactButtonsSecondRow.length > 0 && (
-                  <div className="flex flex-row flex-wrap items-start gap-1">
+                  <div className="flex flex-row flex-wrap items-start gap-3 prose">
                     {DATA.contactButtonsSecondRow?.map((link, idx) => (
-                      <Link href={link?.href} key={idx} target="_blank">
-                        <Badge key={idx} className="flex gap-2 px-2 py-1 text-[10px]">
-                          {link.icon}
-                          {link.type}
-                        </Badge>
-                      </Link>
+                      <Link className="flex items-center gap-1 text-sm" href={link?.href} key={idx} target="_blank">
+                        {link.icon}
+                        {link.type}
+                    </Link>
                     ))}
                   </div>
                 )}
